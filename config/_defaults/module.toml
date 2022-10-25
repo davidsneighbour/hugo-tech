@@ -1,0 +1,16 @@
+[hugoVersion]
+extended = true
+min = "0.104.3"
+#max = ""
+
+[[mounts]]
+source = "assets"
+target = "assets"
+
+[[mounts]]
+source = "i18n"
+target = "i18n"
+
+[[mounts]]
+source = "layouts"
+target = "layouts"

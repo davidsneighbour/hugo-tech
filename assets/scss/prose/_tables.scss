@@ -1,0 +1,11 @@
+.table {
+  &--hooks {
+    tbody {
+      td:nth-of-type(1) {
+        font-weight: 400;
+        white-space: nowrap;
+      }
+    }
+  }
+
+}

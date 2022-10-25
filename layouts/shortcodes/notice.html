@@ -1,0 +1,6 @@
+<div class="alert alert-{{- .Get "type" -}}">
+	{{- with (.Get "heading") -}}
+		<strong class="alert-heading">{{- . -}}</strong>
+	{{- end -}}
+  <p>{{- .Inner | markdownify -}}</p>
+</div>
