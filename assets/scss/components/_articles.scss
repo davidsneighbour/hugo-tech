@@ -23,12 +23,14 @@ article {
     .is--content {
       margin-bottom: 1rem;
 
+      /* stylelint-disable-next-line selector-max-compound-selectors */
       h2 {
         margin-bottom: 0;
 
         font-size: 1.2rem;
       }
 
+      /* stylelint-disable-next-line selector-max-compound-selectors */
       p {
         margin-bottom: 0;
       }

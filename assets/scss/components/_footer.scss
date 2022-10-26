@@ -1,6 +1,7 @@
 #footer {
   color: var(--footer-color-fg);
 
+  /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
   background: linear-gradient(180deg, var(--footer-color-bg) 40%, rgba(0, 0, 0, 1) 100%);
 
   background-color: var(--footer-color-bg);
