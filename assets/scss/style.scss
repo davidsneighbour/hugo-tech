@@ -127,12 +127,14 @@ $layout-character-width: 65ch;
 @import 'settings/utilities';
 @import 'settings/mixins';
 
+// layout
+@import 'layout/global';
+@import 'layout/header';
+@import 'layout/footer';
+
 // components
 @import 'components/utilities';
-@import 'components/layout';
-@import 'components/footer';
 @import 'components/alerts';
-@import 'components/header';
 @import 'components/navigation';
 @import 'components/articles';
 @import 'components/figure';
