@@ -51,11 +51,6 @@
     "clean:netlify": "rimraf .netlify/cache .netlify/functions",
     "clean:npm": "rimraf node_modules package-lock.json",
     "commit": "./node_modules/cz-customizable/standalone.js",
-    "cypress": "npm run cypress:run",
-    "cypress:info": "cypress info",
-    "cypress:install": "cypress install",
-    "cypress:run": "cypress open --config-file tests/cypress/cypress.config.ts",
-    "cypress:verify": "cypress verify",
     "deploy": "bin/deploy/live",
     "deploy:test": "bin/deploy/test",
     "lighthouse": "bin/audit/lighthouse",
@@ -75,13 +70,8 @@
     "release": "standard-version --release-as patch --sign -a -t \"v\" --releaseCommitMessageFormat \"chore(release): v{{currentTag}}\" && ./bin/release/postrelease",
     "release:major": "standard-version --release-as major --sign -a -t \"v\" --releaseCommitMessageFormat \"chore(release): v{{currentTag}}\" && ./bin/release/postrelease",
     "release:minor": "standard-version --release-as minor --sign -a -t \"v\" --releaseCommitMessageFormat \"chore(release): v{{currentTag}}\" && ./bin/release/postrelease",
-    "serve": "run-p serve:hugo",
-    "serve:hugo": "bin/server/run",
-    "serve:script": "tsc --watch",
-    "server": "run-p serve",
-    "server:paranoid": "bin/server/run-paranoid",
     "tests": "npm run cypress",
-    "update": "npm-check-updates -u --target minor && npm install && fixpack && npx browserslist@latest --update-db"
+    "update": "npm-check-updates -u && npm install && fixpack && npx browserslist@latest --update-db"
   },
   "config": {
     "commitizen": {
