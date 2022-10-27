@@ -1,0 +1,41 @@
+// local bootstrap setup/overrides
+:root {
+  --sol-base03: #{$base03};
+  --sol-base02: #{$base02};
+  --sol-base01: #{$base01};
+  --sol-base00: #{$base00};
+  --sol-base0: #{$base0};
+  --sol-base1: #{$base1};
+  --sol-base2: #{$base2};
+  --sol-base3: #{$base3};
+  --sol-yellow: #{$yellow};
+  --sol-orange: #{$orange};
+  --sol-red: #{$red};
+  --sol-magenta: #{$magenta};
+  --sol-violet: #{$violet};
+  --sol-blue: #{$blue};
+  --sol-cyan: #{$cyan};
+  --sol-green: #{$green};
+
+  --primary: var(--sol-red);
+  --highlight: var(--sol-red);
+  --highlight2: var(--sol-orange);
+
+  --sol-base02: var(--sol-base03);
+
+  --color-title: $base0;
+  --color: #{$base3};
+  --color2: #{$red};
+
+  --footer-color-fg: #{$base2};
+  --footer-color-bg: #{$base03}; // note: see components/layout
+
+  --#{$prefix}pagination-bg: #{$base03};
+  --#{$prefix}pagination-border-color: $base0;
+
+  // https://drafts.csswg.org/css-ui-4/#widget-accent
+  // https://caniuse.com/?search=accent-color
+  accent-color: var(--primary);
+
+  color-scheme: dark;
+}

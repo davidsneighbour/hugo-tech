@@ -1,7 +1,6 @@
-// internal settings
-$heading-height: 70px;
-
-// colors
+/*******************************************************************************
+ * colors
+ ******************************************************************************/
 $body-color: $base0;
 $primary: $red;
 $secondary: $base2;
@@ -13,10 +12,14 @@ $light: $base2;
 $dark: $base03;
 $white: $base0;
 
-// layout settings
+/*******************************************************************************
+ * layout settings
+ ******************************************************************************/
 $body-bg: $base03;
 
-// typography
+/*******************************************************************************
+ * typography
+ ******************************************************************************/
 $font-family-sans-serif: 'Exo', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' !default;
 $font-family-monospace: 'JetBrains Mono', SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
 $font-weight-lighter: lighter;
@@ -30,7 +33,9 @@ $font-weight-base: $font-weight-normal;
 $line-height-base: 1.4;
 $small-font-size: 0.875em;
 
-// headings
+/*******************************************************************************
+ * headings
+ ******************************************************************************/
 $headings-font-weight: 300;
 $headings-line-height: 1.3;
 $headings-font-weight: $font-weight-bold;
@@ -42,37 +47,55 @@ $h4-font-size: $font-size-base * 1.5;
 $h5-font-size: $font-size-base * 1.25;
 $h6-font-size: $font-size-base;
 
-// links
+/*******************************************************************************
+ * links
+ ******************************************************************************/
 $link-color: var(--primary);
 $link-decoration: none;
 $link-hover-color: var(--primary);
 $link-hover-decoration: underline;
 
-// navigation
+/*******************************************************************************
+ * navigation
+ * see
+ * - https: //getbootstrap.com/docs/5.2/components/navbar/
+ * - https: //getbootstrap.com/docs/5.2/components/navs-tabs/
+ ******************************************************************************/
 $nav-link-color: var(--sol-base2);
 $nav-link-hover-color: var(--primary);
+$nav-link-font-size: 1rem;
 
-// code
+/*******************************************************************************
+ * code
+ ******************************************************************************/
 $code-font-size: $small-font-size;
 $code-color: $base2;
 
-// lines
+/*******************************************************************************
+ * lines
+ ******************************************************************************/
 $hr-color: var(--primary);
 $hr-bg-color: currentColor;
 $hr-border-width: 0;
 $hr-opacity: 1;
 
-// alerts
+/*******************************************************************************
+ * alerts
+ ******************************************************************************/
 $alert-margin-bottom: 0;
 
-// typography
+/*******************************************************************************
+ * typography
+ ******************************************************************************/
 $kbd-padding-y: 0.1rem;
 $kbd-padding-x: 0.2rem;
 $kbd-font-size: $code-font-size * 0.9;
 $kbd-color: var(--sol-base2);
 $kbd-bg: var(--primary);
 
-// tables
+/*******************************************************************************
+ * tables
+ ******************************************************************************/
 $table-th-font-weight: 300;
 $table-border-width: 1px;
 $table-border-color: var(--primary);
@@ -80,13 +103,25 @@ $table-color: var(--sol-base03);
 $table-bg: var(--sol-base03);
 $table-accent-bg: var(--sol-base03);
 
-// buttons
+/*******************************************************************************
+ * buttongs
+ ******************************************************************************/
 $btn-border-width: 2px;
 
-// settings (non-default)
+/*******************************************************************************
+ * settings
+ ******************************************************************************/
 $enable-rounded: false;
 $enable-rfs: false;
 
-// prefix for CSS variables
+/*******************************************************************************
+ * prefixes
+ ******************************************************************************/
 $variable-prefix: bs-;
 $prefix: $variable-prefix;
+
+/*******************************************************************************
+ * theme relevant settings
+ ******************************************************************************/
+$layout-character-width: 65ch;
+$heading-height: 70px;

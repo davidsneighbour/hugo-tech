@@ -1,90 +1,29 @@
 @charset 'utf-8';
 
+// theme colors
 @import 'settings/colors';
-
-//@import 'settings/solarized';
 
 // bootstrap - setup configuration
 @import 'bootstrap/scss/functions';
 
-// loading settings
+// theme settings
 @import 'settings/theme';
 @import 'settings/fonts';
 @import 'settings/local';
 
-// loading bootstrap (default) settings
+// bootstrap (default) settings
 @import 'bootstrap/scss/variables';
+@import 'settings/layout';
 
-// layout
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-);
-
+// bootstrap initialisation
 @import 'bootstrap/scss/maps';
 @import 'bootstrap/scss/mixins';
 @import 'bootstrap/scss/utilities';
 
-// theme settings
-$layout-character-width: 65ch;
+// our own mixins
+@import 'settings/mixins';
 
-// local bootstrap setup/overrides
-:root {
-  --sol-base03: #{$base03};
-  --sol-base02: #{$base02};
-  --sol-base01: #{$base01};
-  --sol-base00: #{$base00};
-  --sol-base0: #{$base0};
-  --sol-base1: #{$base1};
-  --sol-base2: #{$base2};
-  --sol-base3: #{$base3};
-  --sol-yellow: #{$yellow};
-  --sol-orange: #{$orange};
-  --sol-red: #{$red};
-  --sol-magenta: #{$magenta};
-  --sol-violet: #{$violet};
-  --sol-blue: #{$blue};
-  --sol-cyan: #{$cyan};
-  --sol-green: #{$green};
-
-  --primary: var(--sol-red);
-  --highlight: var(--sol-red);
-  --highlight2: var(--sol-orange);
-
-  --sol-base02: var(--sol-base03);
-
-  --color-title: $base0;
-  --color: #{$base3};
-  --color2: #{$red};
-
-  --footer-color-fg: #{$base2};
-  --footer-color-bg: #{$base03}; // note: see components/layout
-
-  --#{$prefix}pagination-bg: #{$base03};
-  --#{$prefix}pagination-border-color: $base0;
-
-  // https://drafts.csswg.org/css-ui-4/#widget-accent
-  // https://caniuse.com/?search=accent-color
-  accent-color: var(--primary);
-
-  color-scheme: dark;
-}
-
-.light {
-  // settings for a light theme
-  // most (or all) of the light setup is defined as default in :root if dark is defaul
-  // 	@import 'plugins/syntax/light';
-}
-
-.dark {
-  // settings for a dark theme
-  // most (or all) of the dark setup is defined as default in :root if dark is default
-
-  @import 'plugins/syntax/dark';
-}
-
-// bootstrap - layout and components
+// bootstrap components
 @import 'bootstrap/scss/root';
 @import 'bootstrap/scss/reboot';
 @import 'bootstrap/scss/type';
@@ -117,15 +56,13 @@ $layout-character-width: 65ch;
 // @import 'bootstrap/scss/offcanvas';
 // @import 'bootstrap/scss/placeholders';
 
-// bootstrap - helpers
+// bootstrap helpers & utilities
 @import 'bootstrap/scss/helpers';
-
-// bootstrap - utilities
 @import 'bootstrap/scss/utilities/api';
 
-// create utility classes
+// utility classes
 @import 'settings/utilities';
-@import 'settings/mixins';
+@import 'settings/root';
 
 // layout
 @import 'layout/global';
@@ -159,9 +96,11 @@ $layout-character-width: 65ch;
 @import 'plugins/devaudit';
 @import 'plugins/transitions';
 @import 'plugins/alpine';
+@import 'plugins/syntax';
+@import 'plugins/spinner';
 
-// external plugins
-// @import 'animate.css/animate';
+// external plugins (imported from node_modules)
+@import 'animate.css/animate';
 
 // loading local styles
 @import 'local';
