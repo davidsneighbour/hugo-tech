@@ -1,0 +1,15 @@
+Start building sites … 
+hugo v0.104.3-58b824581360148f2d91f5cc83f69bd22c1aa331+extended linux/amd64 BuildDate=2022-10-04T14:25:23Z VendorInfo=gohugoio
+ERROR 2022/10/27 00:10:50 render of "taxonomy" failed: "/home/patrick/github.com/davidsneighbour/hugo-tech/layouts/_default/baseof.html:2:4": execute of template failed: template: _default/taxonomy.html:2:4: executing "_default/taxonomy.html" at <partial "init.html" .>: error calling partial: execute of template failed: template: partials/init.html:1:4: executing "partials/init.html" at <partial "func/hook.html" (dict "hook" "init" "context" .)>: error calling partial: partial "func/hook.html" not found
+ERROR 2022/10/27 00:10:50 render of "taxonomy" failed: "/home/patrick/github.com/davidsneighbour/hugo-tech/layouts/_default/baseof.html:2:4": execute of template failed: template: _default/taxonomy.html:2:4: executing "_default/taxonomy.html" at <partial "init.html" .>: error calling partial: execute of template failed: template: partials/init.html:1:4: executing "partials/init.html" at <partial "func/hook.html" (dict "hook" "init" "context" .)>: error calling partial: partial "func/hook.html" not found
+
+Template Metrics:
+
+     cumulative       average       maximum      cache  percent  cached  total  
+       duration      duration      duration  potential   cached   count  count  template
+     ----------      --------      --------  ---------  -------  ------  -----  --------
+     1.317569ms    1.317569ms    1.317569ms          0        0       0      1  index.html
+      865.732µs     432.866µs     531.326µs          0        0       0      2  _default/taxonomy.html
+      738.307µs     246.102µs     367.814µs          0        0       0      3  partials/init.html
+
+Total in 100 ms
