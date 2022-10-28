@@ -15,10 +15,10 @@ $sizes: 12, 32, 64;
 
 // coloring the selection in the browser
 ::selection {
-  color: #{var(--sol-base03)};
+  color: #{var(--base03)};
   text-shadow: none;
 
-  background-color: #{var(--sol-base3)};
+  background-color: #{var(--base3)};
 }
 
 // font sizes

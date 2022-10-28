@@ -5,9 +5,9 @@
  * - https://getbootstrap.com/docs/5.2/components/navbar/
  * - https://getbootstrap.com/docs/5.2/components/navs-tabs/
  ******************************************************************************/
-
 .navbar {
   .dark & {
+    background-color: $base03;
     @extend .navbar-dark;
   }
 

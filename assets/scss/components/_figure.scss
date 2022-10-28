@@ -13,7 +13,7 @@ figure {
   background-color: var(--primary);
 
   figcaption {
-    color: var(--sol-orange);
+    color: var(--orange);
   }
 
   .inline-icons {
@@ -21,17 +21,17 @@ figure {
     top: 1rem;
     right: 1rem;
 
-    color: var(--sol-red);
+    color: var(--red);
     line-height: 1;
 
-    background-color: rgba(var(--sol-base03), 0.1);
+    background-color: rgba(var(--base03), 0.1);
 
     div {
       padding: 0.5rem;
     }
 
     &:hover {
-      background-color: rgba(var(--sol-base03), 0.5);
+      background-color: rgba(var(--base03), 0.5);
     }
 
   }

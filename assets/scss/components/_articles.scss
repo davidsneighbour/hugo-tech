@@ -4,7 +4,7 @@ article {
   .post-title {
     margin-top: 0.25rem;
     margin-bottom: 1rem;
-    border-bottom: 1px solid var(--sol-red);
+    border-bottom: 1px solid var(--red);
 
     font-weight: 300;
     font-size: 2rem;
@@ -76,11 +76,11 @@ article {
     border-top-left-radius: $border-radius;
     border-bottom-right-radius: $border-radius;
 
-    color: var(--sol-base3);
+    color: var(--base3);
     text-align: center;
 
     &.status--draft {
-      background-color: var(--sol-red);
+      background-color: var(--red);
     }
 
     @extend .py-1;

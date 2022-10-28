@@ -15,7 +15,7 @@ h3,
 h4,
 h5,
 h6 {
-  border-bottom: 1px solid var(--sol-base01);
+  border-bottom: 1px solid var(--base01);
 
   color: var(--primary);
   font-weight: 300;
@@ -98,7 +98,7 @@ table {
 
 .highlight {
   margin-bottom: $spacer;
-  border: 1pt solid var(--sol-base01);
+  border: 1pt solid var(--base01);
 
   .chroma {
     padding: 0.3rem;
@@ -108,7 +108,7 @@ table {
     font-weight: 300;
     font-size: 1rem;
 
-    background-color: var(--sol-base02);
+    background-color: var(--base02);
   }
 }
 
@@ -130,6 +130,6 @@ kbd {
 
 picture {
   img {
-    border: 1px solid var(--sol-base01);
+    border: 1px solid var(--base01);
   }
 }

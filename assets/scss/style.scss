@@ -10,18 +10,20 @@
 @import 'settings/theme';
 @import 'settings/fonts';
 @import 'settings/local';
+@import 'settings/layout';
+@import 'settings/root';
+@import 'settings/utilities';
+
+// our own mixins
+@import 'settings/mixins';
 
 // bootstrap (default) settings
 @import 'bootstrap/scss/variables';
-@import 'settings/layout';
 
 // bootstrap initialisation
 @import 'bootstrap/scss/maps';
 @import 'bootstrap/scss/mixins';
 @import 'bootstrap/scss/utilities';
-
-// our own mixins
-@import 'settings/mixins';
 
 // bootstrap components
 @import 'bootstrap/scss/root';
@@ -59,10 +61,6 @@
 // bootstrap helpers & utilities
 @import 'bootstrap/scss/helpers';
 @import 'bootstrap/scss/utilities/api';
-
-// utility classes
-@import 'settings/utilities';
-@import 'settings/root';
 
 // layout
 @import 'layout/global';

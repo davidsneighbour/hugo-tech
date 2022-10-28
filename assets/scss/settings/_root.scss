@@ -1,27 +1,26 @@
 // local bootstrap setup/overrides
 :root {
-  --sol-base03: #{$base03};
-  --sol-base02: #{$base02};
-  --sol-base01: #{$base01};
-  --sol-base00: #{$base00};
-  --sol-base0: #{$base0};
-  --sol-base1: #{$base1};
-  --sol-base2: #{$base2};
-  --sol-base3: #{$base3};
-  --sol-yellow: #{$yellow};
-  --sol-orange: #{$orange};
-  --sol-red: #{$red};
-  --sol-magenta: #{$magenta};
-  --sol-violet: #{$violet};
-  --sol-blue: #{$blue};
-  --sol-cyan: #{$cyan};
-  --sol-green: #{$green};
+  --base03: #{$base03};
+  --base02: #{$base02};
+  --base01: #{$base01};
+  --base00: #{$base00};
+  --base0: #{$base0};
+  --base1: #{$base1};
+  --base2: #{$base2};
+  --base3: #{$base3};
 
-  --primary: var(--sol-red);
-  --highlight: var(--sol-red);
-  --highlight2: var(--sol-orange);
+  --yellow: #{$yellow};
+  --orange: #{$orange};
+  --red: #{$red};
+  --magenta: #{$magenta};
+  --violet: #{$violet};
+  --blue: #{$blue};
+  --cyan: #{$cyan};
+  --green: #{$green};
 
-  --sol-base02: var(--sol-base03);
+  --primary: var(--red);
+  --highlight: var(--red);
+  --highlight2: var(--orange);
 
   --color-title: $base0;
   --color: #{$base3};
