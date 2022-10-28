@@ -3,6 +3,11 @@
 }
 
 .alert {
+  a {
+    // adds colors to all links inside alerts
+    @extend .alert-link;
+  }
+
   .icon--bs {
     svg {
       width: 24px;

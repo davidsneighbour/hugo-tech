@@ -6,7 +6,6 @@
   box-shadow: $pos1 $pos2 $wishy $color;
 }
 
-
 /* @todo cleanup */
 @mixin rebase($rebase03, $rebase02, $rebase01, $rebase00, $rebase0, $rebase1, $rebase2, $rebase3) {
   color: $rebase0;
@@ -36,7 +35,6 @@
 }
 
 @mixin accentize($accent) {
-
   a,
   a:active,
   a:visited,
