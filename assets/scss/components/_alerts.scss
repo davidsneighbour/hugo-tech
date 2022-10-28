@@ -17,13 +17,4 @@
 
   }
 
-  &-dark {
-    --bs-alert-color: var(--base3);
-    --bs-alert-bg: var(--base02);
-    --bs-alert-border: none;
-
-    .alert-link {
-      color: var(--base3);
-    }
-  }
 }
