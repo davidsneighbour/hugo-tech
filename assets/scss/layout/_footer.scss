@@ -1,7 +1,7 @@
 #footer {
   color: var(--footer-color-fg);
 
-  /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
+  /* stylelint-disable-next-line plugin/no-unsupported-browser-features -- seems like some browsers have issues with linear-gradients, not we... */
   background: linear-gradient(180deg, var(--footer-color-bg) 40%, rgba(0, 0, 0, 1) 100%);
 
   background-color: var(--footer-color-bg);
@@ -36,42 +36,33 @@
 
 .widget--web-vitals {
   strong {
-    display: inline;
-    margin-right: 1rem;
+    @extend .d-inline;
+    @extend .me-3;
 
   }
 
   .is-good {
-    color: $green;
+    @extend .text-success;
   }
 
   .is-bad {
-    color: $orange;
+    @extend .text-danger;
   }
 
   dl {
-    display: inline;
-
-    color: $yellow;
-
     >div {
-      display: inline;
+      @extend .d-inline;
     }
 
-    dt {
-      display: inline;
-      margin-right: 1rem;
-
-      font-size: 1rem;
-
-    }
-
+    dt,
     dd {
-      display: inline;
-      margin-right: 1rem;
-
-      font-size: 1rem;
+      @extend .fontsize-1;
+      @extend .d-inline;
+      @extend .me-3;
     }
+
+    @extend .text-warning;
+    @extend .d-inline;
   }
 
   @extend .text-center;
