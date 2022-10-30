@@ -20,8 +20,6 @@ article {
       /* stylelint-disable-next-line selector-max-compound-selectors */
       h2 {
         margin-bottom: 0;
-
-        font-size: 1.2rem;
       }
 
       /* stylelint-disable-next-line selector-max-compound-selectors */
@@ -34,8 +32,9 @@ article {
   /**
  * This is the article headline in lists and outside of `prose`
  */
-  h1.post-title,
-  h2.post-title {
+  h1.post-title a,
+  h2.post-title a {
+    @extend .fontsize-5;
     @extend .text-uppercase;
   }
 
@@ -50,9 +49,6 @@ article {
     left: 0;
 
     z-index: 1010;
-
-    border-top-left-radius: $border-radius;
-    border-bottom-right-radius: $border-radius;
 
     color: $base3;
     text-align: center;

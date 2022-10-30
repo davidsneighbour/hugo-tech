@@ -30,17 +30,11 @@ h6 {
 }
 
 .kind-page h1,
-h2 {
-  font-size: 1.4rem;
-}
+h2 {}
 
-h3 {
-  font-size: 1.2rem;
-}
+h3 {}
 
-h4 {
-  font-size: 1rem;
-}
+h4 {}
 
 p {
   text-align: justify;
@@ -106,7 +100,6 @@ table {
 
   code {
     font-weight: 300;
-    font-size: 1rem;
 
     background-color: $base02;
   }

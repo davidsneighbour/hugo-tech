@@ -13,7 +13,7 @@ $layout-character-width: 65ch !default;
   display: grid;
 
   /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
-  grid-template-columns: 1fr #{'min(65ch, 100%)'} 1fr;
+  grid-template-columns: 1fr #{'min(75ch, 100%)'} 1fr;
 
   >* {
     grid-column: 2;
