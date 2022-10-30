@@ -1,4 +1,4 @@
-// adding selenized colorset
+// adding theme colorset
 $base03: #282822;
 $base02: #36362f;
 $base01: #4d4d45;
@@ -37,6 +37,9 @@ $green: #7bbf3e;
   --green: #7bbf3e;
 }
 
+/*******************************************************************************
+ * bootstrap defaults
+ ******************************************************************************/
 $primary: $red;
 $secondary: $base2;
 $success: $green;

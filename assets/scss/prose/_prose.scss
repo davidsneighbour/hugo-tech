@@ -18,7 +18,6 @@ h6 {
   border-bottom: 1px solid $base01;
 
   color: $primary;
-  font-weight: 300;
 
   code {
     color: $primary;
@@ -30,6 +29,7 @@ h6 {
   }
 }
 
+.kind-page h1,
 h2 {
   font-size: 1.4rem;
 }

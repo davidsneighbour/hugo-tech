@@ -36,26 +36,10 @@ article {
  */
   h1.post-title,
   h2.post-title {
-    .col-12.col-md-12 & {
-      font-weight: 500;
-      font-size: 1.5rem;
-    }
-
-    .col-12.col-md-6 & {
-      font-weight: 400;
-      font-size: 1.2rem;
-    }
-
-    small {
-      font-size: 1.4rem;
-      text-transform: lowercase;
-    }
-
     @extend .text-uppercase;
   }
 
   .is--publishdate {
-    font-size: 0.9rem;
     text-transform: uppercase;
   }
 
