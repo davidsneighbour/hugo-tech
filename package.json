@@ -86,7 +86,10 @@
   },
   "stylelint": {
     "extends": "@davidsneighbour/config/stylelint",
-    "rules": {}
+    "rules": {},
+    "ignoreFiles": [
+      "assets/scss/settings/_variables.scss"
+    ]
   },
   "wireit": {
     "build:frontmatter": {
