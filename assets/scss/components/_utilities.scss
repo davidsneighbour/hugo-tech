@@ -1,7 +1,7 @@
 // coloring the selection in the browser
 ::selection {
-  color: #{var(--base03)};
+  color: $base03;
   text-shadow: none;
 
-  background-color: #{var(--base3)};
+  background-color: $base3;
 }

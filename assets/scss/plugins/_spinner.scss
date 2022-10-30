@@ -15,7 +15,7 @@
     width: 10%;
     height: 25%;
 
-    background: var(--primary);
+    background: $primary;
     transform: translate(-50%, -50%) rotate(calc(((360 / var(--count)) * var(--index)) * 1deg)) translate(0, -125%);
     opacity: calc(var(--index) / var(--count));
   }

@@ -1,23 +1,4 @@
 /*******************************************************************************
- * colors
- ******************************************************************************/
-$primary: $red;
-$secondary: $base2;
-$success: $green ;
-$info: $cyan;
-$warning: $yellow;
-$danger: $orange;
-$light: $base2;
-$dark: $base03;
-$white: $base0;
-
-/*******************************************************************************
- * layout settings
- ******************************************************************************/
-$body-color: $base0;
-$body-bg: $base03;
-
-/*******************************************************************************
  * typography
  ******************************************************************************/
 $font-family-sans-serif: 'Exo', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' !default;
@@ -50,9 +31,9 @@ $h6-font-size: $font-size-base;
 /*******************************************************************************
  * links
  ******************************************************************************/
-$link-color: var(--primary);
+$link-color: $primary;
 $link-decoration: none;
-$link-hover-color: var(--primary);
+$link-hover-color: $primary;
 $link-hover-decoration: underline;
 
 /*******************************************************************************
@@ -61,9 +42,20 @@ $link-hover-decoration: underline;
  * - https: //getbootstrap.com/docs/5.2/components/navbar/
  * - https: //getbootstrap.com/docs/5.2/components/navs-tabs/
  ******************************************************************************/
-$nav-link-color: var(--base2);
-$nav-link-hover-color: var(--primary);
+$nav-link-color: $base2;
+$nav-link-hover-color: $primary;
 $nav-link-font-size: 1rem;
+
+/*******************************************************************************
+ * pagination
+ ******************************************************************************/
+$pagination-color: $base03;
+$pagination-bg: $base2;
+$pagination-border-color: $base03;
+$pagination-hover-color: $base3;
+$pagination-hover-bg: $base01;
+$pagination-hover-border-color: $base03;
+$pagination-active-color: $base2;
 
 /*******************************************************************************
  * code
@@ -74,7 +66,7 @@ $code-color: $base2;
 /*******************************************************************************
  * lines
  ******************************************************************************/
-$hr-color: var(--primary);
+$hr-color: $primary;
 $hr-bg-color: currentColor;
 $hr-border-width: 0;
 $hr-opacity: 1;
@@ -90,21 +82,21 @@ $alert-margin-bottom: 1rem;
 $kbd-padding-y: 0.1rem;
 $kbd-padding-x: 0.2rem;
 $kbd-font-size: $code-font-size * 0.9;
-$kbd-color: var(--base2);
-$kbd-bg: var(--primary);
+$kbd-color: $base2;
+$kbd-bg: $primary;
 
 /*******************************************************************************
  * tables
  ******************************************************************************/
 $table-th-font-weight: 300;
 $table-border-width: 1px;
-$table-border-color: var(--primary);
-$table-color: var(--base03);
-$table-bg: var(--base03);
-$table-accent-bg: var(--base03);
+$table-border-color: $primary;
+$table-color: $base03;
+$table-bg: $base03;
+$table-accent-bg: $base03;
 
 /*******************************************************************************
- * buttongs
+ * buttons
  ******************************************************************************/
 $btn-border-width: 2px;
 
@@ -130,41 +122,10 @@ $heading-height: 70px;
  * root setup
  ******************************************************************************/
 :root {
-  --base03: #{$base03};
-  --base02: #{$base02};
-  --base01: #{$base01};
-  --base00: #{$base00};
-  --base0: #{$base0};
-  --base1: #{$base1};
-  --base2: #{$base2};
-  --base3: #{$base3};
-
-  --yellow: #{$yellow};
-  --orange: #{$orange};
-  --red: #{$red};
-  --magenta: #{$magenta};
-  --violet: #{$violet};
-  --blue: #{$blue};
-  --cyan: #{$cyan};
-  --green: #{$green};
-
-  --primary: var(--red);
-  --highlight: var(--red);
-  --highlight2: var(--orange);
-
-  --color-title: $base0;
-  --color: #{$base3};
-  --color2: #{$red};
-
-  --footer-color-fg: #{$base2};
-  --footer-color-bg: #{$base03}; // note: see components/layout
-
-  --#{$prefix}pagination-bg: #{$base03};
-  --#{$prefix}pagination-border-color: $base0;
 
   // https://drafts.csswg.org/css-ui-4/#widget-accent
   // https://caniuse.com/?search=accent-color
-  accent-color: var(--primary);
+  accent-color: $primary;
 
   color-scheme: dark;
 }

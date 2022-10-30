@@ -4,7 +4,7 @@ article {
   .post-title {
     margin-top: 0.25rem;
     margin-bottom: 1rem;
-    border-bottom: 1px solid var(--red);
+    border-bottom: 1px solid $red;
 
 
   }
@@ -70,11 +70,11 @@ article {
     border-top-left-radius: $border-radius;
     border-bottom-right-radius: $border-radius;
 
-    color: var(--base3);
+    color: $base3;
     text-align: center;
 
     &.status--draft {
-      background-color: var(--red);
+      background-color: $red;
     }
 
     @extend .py-1;

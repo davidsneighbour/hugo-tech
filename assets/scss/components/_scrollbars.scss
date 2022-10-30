@@ -3,7 +3,7 @@
  ******************************************************************************/
 * {
   scrollbar-width: auto;
-  scrollbar-color: #{var(--primary)} #{var(--bg-card)};
+  scrollbar-color: $primary $card-bg;
 }
 
 /*******************************************************************************
@@ -14,12 +14,12 @@
 }
 
 *::-webkit-scrollbar-track {
-  background: #{var(--bg-card)};
+  background: $card-bg;
 }
 
 *::-webkit-scrollbar-thumb {
-  border: 3px solid #{var(--bg-card)};
+  border: 3px solid $primary;
   border-radius: $border-radius-2xl;
 
-  background-color: #{var(--primary)};
+  background-color: $primary;
 }

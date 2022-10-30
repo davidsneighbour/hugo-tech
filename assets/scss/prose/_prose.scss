@@ -15,17 +15,17 @@ h3,
 h4,
 h5,
 h6 {
-  border-bottom: 1px solid var(--base01);
+  border-bottom: 1px solid $base01;
 
-  color: var(--primary);
+  color: $primary;
   font-weight: 300;
 
   code {
-    color: var(--primary);
+    color: $primary;
   }
 
   a {
-    color: var(--primary);
+    color: $primary;
     text-decoration: none;
   }
 }
@@ -55,9 +55,9 @@ p {
 
 blockquote {
   padding-left: 0.95rem;
-  border-left: var(--primary) 5px solid;
+  border-left: $primary 5px solid;
 
-  background-color: rgba(var(--primary), 0.1);
+  background-color: rgba($primary, 0.1);
 
   cite {
     font-style: italic;
@@ -65,12 +65,12 @@ blockquote {
 }
 
 .border-primary {
-  border-color: var(--primary);
+  border-color: $primary;
 }
 
 table {
 
-  $table-color: var(--#{$prefix}body-color);
+  $table-color: $body-color;
 
   .dark & {
     @extend .table-dark;
@@ -98,7 +98,7 @@ table {
 
 .highlight {
   margin-bottom: $spacer;
-  border: 1pt solid var(--base01);
+  border: 1pt solid $base01;
 
   .chroma {
     padding: 0.3rem;
@@ -108,12 +108,12 @@ table {
     font-weight: 300;
     font-size: 1rem;
 
-    background-color: var(--base02);
+    background-color: $base02;
   }
 }
 
 .section-meta {
-  border-top: 1px solid var(--primary);
+  border-top: 1px solid $primary;
   @extend .pt-3;
 }
 
@@ -130,6 +130,6 @@ kbd {
 
 picture {
   img {
-    border: 1px solid var(--base01);
+    border: 1px solid $base01;
   }
 }

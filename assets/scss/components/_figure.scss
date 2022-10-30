@@ -10,10 +10,10 @@ figure {
   font-weight: $font-weight-bold;
   font-variant: small-caps;
 
-  background-color: var(--primary);
+  background-color: $primary;
 
   figcaption {
-    color: var(--orange);
+    color: $orange;
   }
 
   .inline-icons {
@@ -21,17 +21,17 @@ figure {
     top: 1rem;
     right: 1rem;
 
-    color: var(--red);
+    color: $red;
     line-height: 1;
 
-    background-color: rgba(var(--base03), 0.1);
+    background-color: rgba($base03, 0.1);
 
     div {
       padding: 0.5rem;
     }
 
     &:hover {
-      background-color: rgba(var(--base03), 0.5);
+      background-color: rgba($base03, 0.5);
     }
 
   }
