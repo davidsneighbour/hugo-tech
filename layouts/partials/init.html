@@ -1,7 +1,4 @@
-{{- partial "func/hook.html" ( dict
-  "hook" "init"
-  "context" .
-) -}}
+{{- partial "func/hook.html" ( dict "hook" "init" "context" . ) -}}
 {{- $paginator := dict -}}
 {{- if eq "home" .Kind -}}
   {{- /* see https://discourse.gohugo.io/t/possible-first-list-page-showing-9-items-following-showing-10-items/36186/ */ -}}
@@ -16,7 +13,4 @@
   {{- $paginator = $.Paginator -}}
 {{- end -}}
 {{- .Scratch.Set "paginator" $paginator -}}
-{{- partial "func/hook.html" ( dict
-  "hook" "init-end"
-  "context" .
-) -}}
+{{- partial "func/hook.html" ( dict "hook" "init-end" "context" . ) -}}

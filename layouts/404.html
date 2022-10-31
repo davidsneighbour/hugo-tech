@@ -1,8 +1,5 @@
 {{- define "main" }}
-{{- partial "func/hook.html" ( dict
-  "hook" "container-start"
-  "context" .
-) -}}
+{{- partial "func/hook.html" ( dict "hook" "container-start" "context" . ) -}}
 <section class="section--404">
   <div class="container">
     <div class="row">
@@ -19,8 +16,5 @@
     </div>
   </div>
 </section>
-{{- partial "func/hook.html" ( dict
-  "hook" "container-end"
-  "context" .
-) -}}
+{{- partial "func/hook.html" ( dict "hook" "container-end" "context" . ) -}}
 {{- end -}}

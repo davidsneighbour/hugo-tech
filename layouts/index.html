@@ -17,10 +17,7 @@
 
         </div>
       </div>
-      {{- partial "func/hook.html" ( dict
-        "hook" "post-sitetitle"
-        "context" .
-      ) -}}
+      {{- partial "func/hook.html" ( dict "hook" "post-sitetitle" "context" . ) -}}
     </section>
   {{- end -}}
   {{- partial "content/section-posts.html" . -}}
