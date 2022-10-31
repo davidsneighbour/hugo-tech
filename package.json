@@ -1,7 +1,7 @@
 {
   "name": "@davidsneighbour/hugo-tech",
   "description": "A theme for GoHugo",
-  "version": "1.2022.0",
+  "version": "1.2022.1",
   "license": "MIT",
   "private": true,
   "repository": "davidsneighbour/hugo-tech",
@@ -86,7 +86,9 @@
   },
   "stylelint": {
     "extends": "@davidsneighbour/config/stylelint",
-    "rules": {},
+    "rules": {
+      "block-opening-brace-newline-after": "always"
+    },
     "ignoreFiles": [
       "assets/scss/settings/_variables.scss"
     ]
