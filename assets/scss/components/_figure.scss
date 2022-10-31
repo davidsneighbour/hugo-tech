@@ -1,36 +1,26 @@
 figure {
-  position: relative;
-
-  margin-bottom: 0;
-  padding: 3px;
-
-  color: var(--card-header-link-color-hover);
-
   font-variant: small-caps;
 
-  background-color: $primary;
-
-  figcaption {
-    color: $orange;
-  }
-
   .inline-icons {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-
-    color: $red;
-    line-height: 1;
-
     background-color: rgba($base03, 0.1);
 
     div {
-      padding: 0.5rem;
+      @extend .p-2;
     }
 
     &:hover {
       background-color: rgba($base03, 0.5);
     }
+
+    @extend .text-primary;
+
+    @extend .top-0;
+    @extend .end-0;
+    @extend .m-3;
+
+    @extend .position-absolute;
+
+    @extend .lh-1;
 
   }
 
@@ -38,17 +28,16 @@ figure {
   img,
   .iframe-border,
   video {
-    width: 100%;
     object-fit: cover;
     overflow: hidden;
     aspect-ratio: 2/1;
+    @extend .w-100;
   }
 
-  a {
-    color: var(--card-header-link-color);
+  @extend .bg-primary;
 
-    &:hover {
-      color: var(--card-header-link-color-hover);
-    }
-  }
+  @extend .position-relative;
+  @extend .p-1;
+
+  @extend .mb-0;
 }

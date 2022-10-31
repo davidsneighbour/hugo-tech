@@ -12,7 +12,7 @@ $layout-character-width: 65ch !default;
 .wrapper {
   display: grid;
 
-  /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
+  /* stylelint-disable-next-line plugin/no-unsupported-browser-features -- ignore this for idiot browsers */
   grid-template-columns: 1fr #{'min(75ch, 100%)'} 1fr;
 
   >* {

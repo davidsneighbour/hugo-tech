@@ -1,10 +1,11 @@
+// @todo move this into prose
 article {
-  position: relative;
-
   .post-title {
-    margin-top: 0.25rem;
-    margin-bottom: 1rem;
-    border-bottom: 1px solid $red;
+    @extend .border-bottom;
+    @extend .border-primary;
+    @extend .border-1;
+    @extend .mt-1;
+    @extend .mb-3;
 
 
   }
@@ -15,17 +16,18 @@ article {
     }
 
     .is--content {
-      margin-bottom: 1rem;
 
-      /* stylelint-disable-next-line selector-max-compound-selectors */
+      /* stylelint-disable-next-line selector-max-compound-selectors -- required */
       h2 {
-        margin-bottom: 0;
+        @extend .mb-0;
       }
 
-      /* stylelint-disable-next-line selector-max-compound-selectors */
+      /* stylelint-disable-next-line selector-max-compound-selectors -- required */
       p {
-        margin-bottom: 0;
+        @extend .mb-0;
       }
+
+      @extend .mb-3;
     }
   }
 
@@ -39,23 +41,23 @@ article {
   }
 
   .is--publishdate {
-    text-transform: uppercase;
+    @extend .text-uppercase;
   }
 
   .ribbon {
-    position: absolute;
-
-    top: 0;
-    left: 0;
-
     z-index: 1010;
 
     color: $base3;
-    text-align: center;
 
     &.status--draft {
-      background-color: $red;
+      @extend .bg-primary;
     }
+
+    @extend .text-center;
+
+    @extend .position-absolute;
+    @extend .top-0;
+    @extend .start-0;
 
     @extend .py-1;
     @extend .px-2;
@@ -65,5 +67,7 @@ article {
   .is--date {
     white-space: nowrap;
   }
+
+  @extend .position-relative;
 
 }

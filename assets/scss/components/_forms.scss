@@ -1,3 +1,4 @@
 input:autofill {
-  border: 1px solid $orange;
+  @extend .border-1;
+  @extend .border-primary;
 }

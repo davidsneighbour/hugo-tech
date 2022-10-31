@@ -1,4 +1,4 @@
-/* stylelint-disable block-no-empty, plugin/no-unsupported-browser-features */
+/* stylelint-disable block-no-empty -- empty blocks are here to show opportunities */
 
 /* Background */
 .bg {
@@ -382,8 +382,7 @@
 .chroma .gp {}
 
 /* GenericStrong */
-.chroma .gs {
-}
+.chroma .gs {}
 
 /* GenericSubheading */
 .chroma .gu {
