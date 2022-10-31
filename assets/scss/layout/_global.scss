@@ -29,7 +29,7 @@ $layout-character-width: 65ch !default;
 /*******************************************************************************
  * content area
  ******************************************************************************/
-#content {
+main {
   padding-top: $heading-height + 30px;
   @extend .wrapper;
 }
