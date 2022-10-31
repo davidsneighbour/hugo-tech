@@ -10,8 +10,8 @@
 
   .icon--bs {
     svg {
-      width: 24px;
-      height: 24px;
+      @extend .cy-24;
+      @extend .cx-24;
       @extend .me-3;
     }
 

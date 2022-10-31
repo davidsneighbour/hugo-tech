@@ -1,20 +1,20 @@
 // https://getbootstrap.com/docs/5.2/utilities/api/
 $containers: (
-  12,
-  24,
-  36,
-  48,
-  60
+  12: 12px,
+  24: 24px,
+  36: 36px,
+  48: 48px,
+  60: 60px
 );
 
 $utilities: (
   'fsize': (property: font-size,
     class: fontsize,
-    values: (1: '0.8rem',
-      2: '0.9rem',
-      3: '1rem',
-      4: '1.1rem',
-      5: '1.2rem',
+    values: (1: 0.8rem,
+      2: 0.9rem,
+      3: 1rem,
+      4: 1.1rem,
+      5: 1.2rem,
     )),
   'containery': (property: height,
     values: $containers,
@@ -23,14 +23,3 @@ $utilities: (
     values: $containers,
     class: cx)
 );
-
-@each $container in $containers {
-  .cx-#{$container} {
-    height: auto;
-  }
-
-  .cy-#{$container} {
-    width: auto;
-  }
-
-}
