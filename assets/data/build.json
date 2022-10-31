@@ -1,9 +1,9 @@
 {
-  "url": "https://api.github.com/repos/davidsneighbour/hugo-tech/releases/81492822",
-  "assets_url": "https://api.github.com/repos/davidsneighbour/hugo-tech/releases/81492822/assets",
-  "upload_url": "https://uploads.github.com/repos/davidsneighbour/hugo-tech/releases/81492822/assets{?name,label}",
-  "html_url": "https://github.com/davidsneighbour/hugo-tech/releases/tag/v2022.0.9",
-  "id": 81492822,
+  "url": "https://api.github.com/repos/davidsneighbour/hugo-tech/releases/81551331",
+  "assets_url": "https://api.github.com/repos/davidsneighbour/hugo-tech/releases/81551331/assets",
+  "upload_url": "https://uploads.github.com/repos/davidsneighbour/hugo-tech/releases/81551331/assets{?name,label}",
+  "html_url": "https://github.com/davidsneighbour/hugo-tech/releases/tag/v2022.0.10",
+  "id": 81551331,
   "author": {
     "login": "davidsneighbour",
     "id": 83281,
@@ -24,18 +24,18 @@
     "type": "User",
     "site_admin": false
   },
-  "node_id": "RE_kwDOITeor84E23tW",
-  "tag_name": "v2022.0.9",
+  "node_id": "RE_kwDOITeor84E3F_j",
+  "tag_name": "v2022.0.10",
   "target_commitish": "main",
-  "name": "v2022.0.9",
+  "name": "v2022.0.10",
   "draft": false,
   "prerelease": false,
-  "created_at": "2022-10-30T16:17:10Z",
-  "published_at": "2022-10-30T16:17:21Z",
+  "created_at": "2022-10-31T13:25:04Z",
+  "published_at": "2022-10-31T13:25:36Z",
   "assets": [
 
   ],
-  "tarball_url": "https://api.github.com/repos/davidsneighbour/hugo-tech/tarball/v2022.0.9",
-  "zipball_url": "https://api.github.com/repos/davidsneighbour/hugo-tech/zipball/v2022.0.9",
-  "body": "**Full Changelog**: https://github.com/davidsneighbour/hugo-tech/commits/v2022.0.9"
+  "tarball_url": "https://api.github.com/repos/davidsneighbour/hugo-tech/tarball/v2022.0.10",
+  "zipball_url": "https://api.github.com/repos/davidsneighbour/hugo-tech/zipball/v2022.0.10",
+  "body": "**Full Changelog**: https://github.com/davidsneighbour/hugo-tech/commits/v2022.0.10"
 }
