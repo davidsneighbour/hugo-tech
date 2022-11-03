@@ -33,3 +33,40 @@ main {
   padding-top: $heading-height + 30px;
   @extend .wrapper;
 }
+
+.content {
+  --gap: clamp(1rem, 6vw, 3rem);
+  --full: minmax(var(--gap), 1fr);
+  --content: min(50ch, 100% - var(--gap) * 2);
+  --popout: minmax(0, 2rem);
+  --feature: minmax(0, 5rem);
+
+  display: grid;
+  grid-template-columns: [full-start] var(--full) [feature-start] var(--feature) [popout-start] var(--popout) [content-start] var(--content) [content-end] var(--popout) [popout-end] var(--feature) [feature-end] var(--full) [full-end];
+}
+
+.content>* {
+  grid-column: content;
+}
+
+.popout {
+  grid-column: popout;
+}
+
+.feature {
+  grid-column: feature;
+}
+
+.full {
+  grid-column: full;
+}
+
+/*******************************************************************************
+ *
+ --gap represents a gutter size for the left and right sides of the page. This value leans into the clamp() function for more fluid,
+ flexible sizing. --full stretches an element so that it spans the entire horizontal space. By setting --gap as the min value,
+ it also takes on the role of visible page gutters for smaller screens. --content acts as the main content area. The min() function sets the max-width of this column. Once the available space falls below this value,
+ it then switches to 100% while also subtracting the left and right gutter sizes. --popout and --feature extend elements beyond the content area by 2rem and 5rem respectively. As the available horizontal area tightens,
+ these values collapse down to nothing,
+ aligning elements with the main content space on smaller screens.
+ ******************************************************************************/
