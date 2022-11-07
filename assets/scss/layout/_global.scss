@@ -30,7 +30,14 @@ $layout-character-width: 65ch !default;
  * content area
  ******************************************************************************/
 main {
+  z-index: 1029;
+
   padding-top: $heading-height + 30px;
+
+  background-color: $base03;
+
+  @extend .min-vh-100;
+  @extend .position-relative;
   @extend .wrapper;
 }
 
@@ -41,6 +48,7 @@ main {
   --popout: minmax(0, 2rem);
   --feature: minmax(0, 5rem);
 
+  /* stylelint-disable plugin/no-unsupported-browser-features -- we can live with that. */
   display: grid;
   grid-template-columns: [full-start] var(--full) [feature-start] var(--feature) [popout-start] var(--popout) [content-start] var(--content) [content-end] var(--popout) [popout-end] var(--feature) [feature-end] var(--full) [full-end];
 }

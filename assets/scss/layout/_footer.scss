@@ -1,4 +1,7 @@
 #footer {
+  bottom: 0;
+  left: 0;
+
   color: $base2;
 
   /* stylelint-disable-next-line plugin/no-unsupported-browser-features -- seems like some browsers have issues with linear-gradients, not we... */
@@ -15,6 +18,10 @@
       text-decoration: none;
     }
   }
+
+  
+  @extend .position-sticky;
+  @extend .w-100;
 }
 
 .widget.social-media {
