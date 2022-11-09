@@ -22,11 +22,16 @@
 
 {{ $type := "single" }}
 {{- if in $configTypes .Type -}}
-	{{- if isset .Attributes "single" -}}
+	{{ with .Attributes.noconfig }}
 		{{ $type = "single" }}
 	{{- else -}}
-		{{ $type = "config" }}
-	{{- end -}}
+		{{- if isset .Attributes "single" -}}
+			{{- $type = "single" -}}
+		{{- else -}}
+			{{- $type = "config" -}}
+		{{- end -}}
+
+	{{ end }}
 {{- end -}}
 
 {{- if eq $type "single" -}}
