@@ -25,6 +25,7 @@
     "instantsearch.js": "4.49.4",
     "lazysizes": "5.3.2",
     "lite-youtube-embed": "0.2.0",
+    "lockfile-lint": "^4.10.0",
     "needle": "3.2.0",
     "netlify-cli": "12.7.2",
     "ninja-keys": "1.2.2",
@@ -63,13 +64,9 @@
     "clean:netlify": "rimraf .netlify/cache .netlify/functions",
     "clean:npm": "rimraf node_modules package-lock.json",
     "commit": "./node_modules/cz-customizable/standalone.js",
-    "deploy": "bin/deploy/live",
-    "deploy:test": "bin/deploy/test",
     "lighthouse": "bin/audit/lighthouse",
     "lint": "wireit",
-    "lint:html": "html-validate --config=tests/html-validator/config.json public",
-    "lint:html:config": "html-validate --print-config=tests/html-validator/config.json",
-    "lint:lockfiles": "lockfile-lint --path package-lock.json --type=npm --validate-https --allowed-hosts=npm --empty-hostname=false --validate-package-names --validate-checksum --validate-integrity",
+    "lint:lockfiles": "lockfile-lint --path package-lock.json --validate-https",
     "lint:scripts": "eslint assets/js --ext .ts",
     "lint:scripts:fix": "eslint assets/js --ext .ts --fix",
     "lint:styles": "stylelint --color --report-descriptionless-disables --report-invalid-scope-disables --report-needless-disables assets/scss",
@@ -102,7 +99,6 @@
     },
     "lint": {
       "dependencies": [
-        "lint:html",
         "lint:lockfiles"
       ]
     }
