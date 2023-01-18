@@ -1,0 +1,27 @@
+@mixin dnb_scrollbars($outertag: "*", $width: 8px, $radius: $border-radius, $color: $primary, $track: $base03) {
+  #{$outertag} {
+    /***************************************************************************
+     * firefox
+     **************************************************************************/
+    scrollbar-width: $width;
+    scrollbar-color: $color $track;
+
+    /***************************************************************************
+     * chrome, edge, and safari
+     **************************************************************************/
+    ::-webkit-scrollbar {
+      width: $width;
+      height: $width;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: $track;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      border: 0;
+      border-radius: $radius;
+      background-color: $color;
+    }
+  }
+}
