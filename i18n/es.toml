@@ -1,0 +1,67 @@
+[name]
+description = ""
+other = "Tu Nombre"
+
+[email]
+description = ""
+other = "Correo Electrónico"
+
+[subject]
+description = ""
+other = "Sujeto"
+
+[message]
+description = ""
+other = "Tu Mensaje Aquí"
+
+[send_message]
+description = ""
+other = "Enviar Mensaje"
+
+[read_article]
+description = ""
+other = "Leer Artículo"
+
+[showing_posts_from]
+description = ""
+other = "Mostrando publicaciones de"
+
+[home]
+description = ""
+other = "Inicio"
+
+[search]
+description = ""
+other = "Buscar"
+
+[categories]
+description = ""
+other = "Categorías"
+
+[tags]
+description = ""
+other = "Etiquetas"
+
+[social]
+description = ""
+other = "Social"
+
+[copyright-text]
+description = ""
+other = "&copy; %s - Webwork hecho por [David&apos;s Neighbour](https://davids-neighbour.com)"
+
+[at]
+description = ""
+other = "en"
+
+[this-is]
+description = ""
+other = "esto es %s"
+
+[via]
+description = ""
+other = "vía"
+
+[connect-on-social]
+description = ""
+other = "Conecta en Redes Sociales"
